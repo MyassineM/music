@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -315,7 +315,7 @@ function play(guild, song) {
 client.on('message', message => {
     if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
+        .setTitle('** اوامر بوت ميوزك عرب سيرفر،**')
         .setDescription('**برفكس البوت (!)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
@@ -337,7 +337,7 @@ client.on('message', message => {
         .addField('avatar', "افاتار الشخص المطلوب")
         .addField('gif', 'البحث عن جيف انت تطلبه')
         .addField('ping', 'معرفة ping البوت')
-        .setFooter('المزيد قريبا ان شاء الله!')
+        .setFooter('عرب سيرفر سيقوم بتطوير البوت قريبا ان شاء الله')
       message.channel.send(helpEmbed);
     }
 });
@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | Last Music`,"http://twitch.tv/Death Shop")
+client.user.setGame(`1play | Arab Server,`,"http://twitch.tv/ Arab Server")
 client.user.setStatus("dnd")
 });
 
